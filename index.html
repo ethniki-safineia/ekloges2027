@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Εκλογές 2027 Ελλάδα</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div id="loading">Φόρτωση...</div>
+  <header>
+    <img src="logo.png" alt="Ελληνική Σημαία" class="logo"/>
+    <h1>Εκλογές 2027</h1>
+  </header>
+  <main>
+    <h2>Ποιον θέλετε Πρωθυπουργό στις εκλογές του 2027;</h2>
+    <div class="candidates">
+      <button onclick="vote('kasidiaris')">Κασιδιάρης</button>
+      <button onclick="vote('mitsotakis')">Μητσοτάκης</button>
+      <button onclick="vote('konstantopoulou')">Κωνσταντοπούλου</button>
+      <button onclick="vote('latinopoulou')">Λατινοπούλου</button>
+    </div>
+    <canvas id="resultsChart"></canvas>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
