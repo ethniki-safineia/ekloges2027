@@ -1,7 +1,8 @@
-
+// Firebase από CDN (παλιό modular API για απλό HTML)
 const firebaseConfig = {
   apiKey: "AIzaSyCsH042eJMuTj8ngCBZJjfHkwL7qpFM7gA",
   authDomain: "ekloges2027.firebaseapp.com",
+  databaseURL: "https://ekloges2027-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "ekloges2027",
   storageBucket: "ekloges2027.firebasestorage.app",
   messagingSenderId: "848081634607",
@@ -12,7 +13,10 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 
-document.getElementById('loading').style.display = 'none';
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById('loading').style.display = 'none';
+  updateChart();
+});
 
 function vote(candidate) {
   const voted = localStorage.getItem('voted2027');
@@ -53,5 +57,3 @@ function updateChart() {
     chart.update();
   });
 }
-
-updateChart();
