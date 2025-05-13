@@ -1,12 +1,12 @@
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  databaseURL: "https://YOUR_PROJECT_ID.firebaseio.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyCsH042eJMuTj8ngCBZJjfHkwL7qpFM7gA",
+  authDomain: "ekloges2027.firebaseapp.com",
+  projectId: "ekloges2027",
+  storageBucket: "ekloges2027.firebasestorage.app",
+  messagingSenderId: "848081634607",
+  appId: "1:848081634607:web:ceacfa7d3a0e2394fbcdda",
+  measurementId: "G-ELT8V815ZK"
 };
 
 firebase.initializeApp(firebaseConfig);
